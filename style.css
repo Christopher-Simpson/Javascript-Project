@@ -1,0 +1,7 @@
+/*--Basic styling --*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    width: 300px;
+}
