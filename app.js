@@ -1,3 +1,5 @@
+//Constants
+
 const cardObj = [
     {name: 'bramble', image: 'images/bramble.png'},
     {name: 'bramble', image: 'images/bramble.png'},
@@ -13,15 +15,18 @@ const cardObj = [
     {name: 'wine', image: 'images/wine.png'}
 ]
 
+const container = document.querySelector('.container')
 
-
+//Loop over array and create cards
 function dealCards() {
     for (let i = 0; i < cardObj.length; i++) {
-        var container = document.querySelector('.container')
+        //create an image element called cards
         var cards = document.createElement('img')
+        //give the image element the backface graphic
         cards.setAttribute('src', 'images/marble.jpg')
+        //Send images to container
         container.appendChild(cards)
+        }
     }
-}
 
-dealCards()
+    dealCards()
