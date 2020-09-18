@@ -24,9 +24,18 @@ function dealCards() {
         var cards = document.createElement('img')
         //give the image element the backface graphic
         cards.setAttribute('src', 'images/marble.jpg')
+        //event listener to click the images and call on flip function
+        cards.addEventListener('click', flipOver)
         //Send images to container
         container.appendChild(cards)
         }
+        console.log(cards)
     }
 
-    dealCards()
+//click and compare cards
+function flipOver() {
+    var clicked = document.querySelector('img')
+    this.classList.add('clicked')
+}  
+
+dealCards()
